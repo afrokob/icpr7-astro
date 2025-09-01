@@ -41,9 +41,19 @@ import Footer from '../components/Footer.astro';
   <Nav />
 
   <main class="min-h-screen">
-    <!-- Hero Section with enhanced visual hierarchy -->
-    <section class="bg-gradient-to-b from-neutral-50 to-white py-16 lg:py-24" aria-labelledby="hero-heading">
-      <div class="container mx-auto px-6">
+    <!-- Hero Section with enhanced visual hierarchy and background image -->
+    <section class="relative bg-gradient-to-b from-neutral-50 to-white py-16 lg:py-24 overflow-hidden" aria-labelledby="hero-heading">
+      <!-- Hero background image with overlay -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/images/hero-banner.svg" 
+          alt="Singapore University of Social Sciences campus view" 
+          class="w-full h-full object-cover opacity-10"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-neutral-50/90 to-white/80"></div>
+      </div>
+      
+      <div class="relative z-10 container mx-auto px-6">
         <div class="max-w-5xl mx-auto text-center">
           <!-- Conference badge -->
           <div class="inline-flex items-center bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -147,9 +157,9 @@ import Footer from '../components/Footer.astro';
               </p>
             </div>
             <div class="space-y-4">
-              <SpeakerCard name="Emeritus Prof. Mike Austin" title="Board Member, The International Community of Practice Research, USA" />
-              <SpeakerCard name="Dr Sidsel Natland" title="Board Member, The International Community of Practice Research, Norway" />
-              <SpeakerCard name="Associate Professor Sui Ting Kong" title="Board Member, The International Community of Practice Research, UK" />
+              <SpeakerCard name="Emeritus Prof. Mike Austin" title="Board Member, The International Community of Practice Research, USA" image="/images/mike-austin.svg" />
+              <SpeakerCard name="Dr Sidsel Natland" title="Board Member, The International Community of Practice Research, Norway" image="/images/sidsel-natland.svg" />
+              <SpeakerCard name="Associate Professor Sui Ting Kong" title="Board Member, The International Community of Practice Research, UK" image="/images/sui-ting-kong.svg" />
             </div>
           </div>
 
@@ -165,8 +175,8 @@ import Footer from '../components/Footer.astro';
               </p>
             </div>
             <div class="space-y-4">
-              <SpeakerCard name="Dr Chung You Jin" title="Singapore University of Social Sciences, Singapore" />
-              <SpeakerCard name="Dr Judith Chew" title="KK Women's and Children's Hospital, Singapore" />
+              <SpeakerCard name="Dr Chung You Jin" title="Singapore University of Social Sciences, Singapore" image="/images/chung-you-jin.svg" />
+              <SpeakerCard name="Dr Judith Chew" title="KK Women's and Children's Hospital, Singapore" image="/images/judith-chew.svg" />
             </div>
           </div>
 
@@ -182,9 +192,9 @@ import Footer from '../components/Footer.astro';
               </p>
             </div>
             <div class="space-y-4">
-              <SpeakerCard name="Emeritus Prof. Antoinette Lombard" title="President, International Association of Schools of Social Work, South Africa" />
-              <SpeakerCard name="Prof. Tsui Ming Sum" title="Editor, International Social Work, Hong Kong" />
-              <SpeakerCard name="Tan Sze Wee" title="President, Singapore Association of Social Workers, Singapore" />
+              <SpeakerCard name="Emeritus Prof. Antoinette Lombard" title="President, International Association of Schools of Social Work, South Africa" image="/images/antoinette-lombard.svg" />
+              <SpeakerCard name="Prof. Tsui Ming Sum" title="Editor, International Social Work, Hong Kong" image="/images/tsui-ming-sum.svg" />
+              <SpeakerCard name="Tan Sze Wee" title="President, Singapore Association of Social Workers, Singapore" image="/images/tan-sze-wee.svg" />
               
               <!-- Closing Keynote -->
               <div class="pt-4 border-t border-neutral-100 mt-6">
@@ -193,8 +203,8 @@ import Footer from '../components/Footer.astro';
                   Reflecting on the Lessons Learned, Observations and Recommendations
                 </p>
                 <div class="space-y-3">
-                  <SpeakerCard name="Prof. Sara Serbati" title="Board Member, The International Community of Practice Research, Italy" />
-                  <SpeakerCard name="Ms Salina Samion" title="Deputy Director of Psychological and Correctional Rehabilitation Division, Singapore Prison Service, Singapore" />
+                  <SpeakerCard name="Prof. Sara Serbati" title="Board Member, The International Community of Practice Research, Italy" image="/images/sara-serbati.svg" />
+                  <SpeakerCard name="Ms Salina Samion" title="Deputy Director of Psychological and Correctional Rehabilitation Division, Singapore Prison Service, Singapore" image="/images/salina-samion.svg" />
                 </div>
               </div>
             </div>

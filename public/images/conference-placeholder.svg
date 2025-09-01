@@ -1,0 +1,31 @@
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Professional conference room background -->
+  <rect width="800" height="400" fill="#f8fafc"/>
+  
+  <!-- Stage/presentation area -->
+  <rect x="50" y="150" width="700" height="200" fill="#e2e8f0" rx="8"/>
+  <rect x="100" y="180" width="600" height="120" fill="#334155" rx="4"/>
+  
+  <!-- Audience seats -->
+  <rect x="120" y="320" width="15" height="20" fill="#475569" rx="2"/>
+  <rect x="140" y="320" width="15" height="20" fill="#475569" rx="2"/>
+  <rect x="160" y="320" width="15" height="20" fill="#475569" rx="2"/>
+  <rect x="180" y="320" width="15" height="20" fill="#475569" rx="2"/>
+  <rect x="200" y="320" width="15" height="20" fill="#475569" rx="2"/>
+  
+  <rect x="240" y="320" width="15" height="20" fill="#475569" rx="2"/>
+  <rect x="260" y="320" width="15" height="20" fill="#475569" rx="2"/>
+  <rect x="280" y="320" width="15" height="20" fill="#475569" rx="2"/>
+  <rect x="300" y="320" width="15" height="20" fill="#475569" rx="2"/>
+  
+  <!-- Conference text -->
+  <text x="400" y="250" font-family="Inter" font-size="48" font-weight="bold" text-anchor="middle" fill="white">ICPR7</text>
+  <text x="400" y="280" font-family="Inter" font-size="18" text-anchor="middle" fill="#cbd5e1">Practice Research Conference</text>
+  
+  <!-- Academic elements -->
+  <circle cx="150" cy="80" r="30" fill="#0284c7" opacity="0.1"/>
+  <circle cx="650" cy="100" r="40" fill="#0369a1" opacity="0.1"/>
+  
+  <!-- Podium -->
+  <rect x="380" y="300" width="40" height="50" fill="#64748b" rx="4"/>
+</svg>

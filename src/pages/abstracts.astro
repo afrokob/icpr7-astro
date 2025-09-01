@@ -1,0 +1,398 @@
+---
+// Call for Abstracts page with professional academic design
+// Features submission guidelines, assessment criteria, and important information
+import Nav from '../components/Nav.astro';
+import ImportantDates from '../components/ImportantDates.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Call for Abstracts - ICPR7 2026 | 7th International Conference on Practice Research</title>
+  <meta name="description" content="Submit your abstract for ICPR7 2026. Guidelines, criteria, and submission process for the 7th International Conference on Practice Research in Singapore.">
+  <meta name="keywords" content="ICPR7 abstract submission, practice research conference, academic papers, research presentation, Singapore 2026">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-neutral-25 font-sans antialiased">
+  <Nav />
+
+  <main class="min-h-screen">
+    <!-- Page Header -->
+    <section class="bg-gradient-to-b from-primary-50 to-white py-16 lg:py-20" aria-labelledby="abstracts-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="inline-flex items-center bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+            Abstract Submission
+          </div>
+          
+          <h1 id="abstracts-heading" class="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+            Call for Abstracts
+          </h1>
+          
+          <p class="text-xl text-neutral-600 leading-relaxed max-w-3xl mx-auto mb-8">
+            We invite researchers, practitioners, service users, and stakeholders to share their experiences, 
+            innovations, and insights in practice research through abstract submissions for ICPR7 2026.
+          </p>
+          
+          <!-- Submission Status -->
+          <div class="bg-primary-600 text-white px-8 py-4 rounded-lg inline-flex items-center mb-8">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <span class="font-semibold">Submissions Open: August 1 - November 30, 2025</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submission Guidelines -->
+    <section class="py-16 lg:py-20 bg-white" aria-labelledby="guidelines-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 id="guidelines-heading" class="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
+              Submission Guidelines
+            </h2>
+            <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-6"></div>
+            <p class="text-neutral-600 text-lg max-w-3xl mx-auto">
+              Please review these guidelines carefully before preparing your abstract submission.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Abstract Categories -->
+            <div class="bg-neutral-50 rounded-2xl p-8">
+              <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-neutral-800">Abstract Categories</h3>
+              </div>
+              
+              <div class="space-y-4">
+                <div class="bg-white rounded-lg p-4 border-l-4 border-primary-500">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Research Presentations</h4>
+                  <p class="text-sm text-neutral-600">Completed practice research studies with findings and implications</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-4 border-l-4 border-accent-500">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Work in Progress</h4>
+                  <p class="text-sm text-neutral-600">Ongoing research projects seeking feedback and collaboration</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-4 border-l-4 border-neutral-400">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Practice Innovations</h4>
+                  <p class="text-sm text-neutral-600">Novel approaches and methodologies in practice research</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-4 border-l-4 border-primary-300">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Collaborative Projects</h4>
+                  <p class="text-sm text-neutral-600">Multi-stakeholder research initiatives and partnerships</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submission Requirements -->
+            <div class="bg-white border border-neutral-200 rounded-2xl p-8">
+              <div class="flex items-center mb-6">
+                <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-accent-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-neutral-800">Submission Requirements</h3>
+              </div>
+              
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-medium text-neutral-800 mb-1">Word Limit</p>
+                    <p class="text-sm text-neutral-600">Maximum 500 words (excluding title and references)</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-medium text-neutral-800 mb-1">Format</p>
+                    <p class="text-sm text-neutral-600">PDF or Word document, Times New Roman 12pt, double-spaced</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-medium text-neutral-800 mb-1">Language</p>
+                    <p class="text-sm text-neutral-600">English (abstracts in other languages welcome with English translation)</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-medium text-neutral-800 mb-1">Author Information</p>
+                    <p class="text-sm text-neutral-600">Include all author names, affiliations, and contact details</p>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="w-2 h-2 bg-primary-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-medium text-neutral-800 mb-1">Keywords</p>
+                    <p class="text-sm text-neutral-600">3-5 keywords related to your research topic</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Assessment Criteria -->
+    <section class="py-16 lg:py-20 bg-neutral-50" aria-labelledby="criteria-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 id="criteria-heading" class="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
+              Assessment Criteria
+            </h2>
+            <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-6"></div>
+            <p class="text-neutral-600 text-lg">
+              All abstracts will be reviewed by our international panel of experts based on the following criteria:
+            </p>
+          </div>
+
+          <!-- Criteria Table -->
+          <div class="bg-white rounded-2xl shadow-sm border border-neutral-200 overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="w-full" role="table" aria-label="Abstract assessment criteria">
+                <thead class="bg-primary-600 text-white">
+                  <tr>
+                    <th scope="col" class="px-6 py-4 text-left font-semibold">Criteria</th>
+                    <th scope="col" class="px-6 py-4 text-left font-semibold">Description</th>
+                    <th scope="col" class="px-6 py-4 text-center font-semibold">Weight</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-neutral-200">
+                  <tr class="hover:bg-neutral-25 transition-colors duration-150">
+                    <td class="px-6 py-4 font-medium text-neutral-800">Relevance</td>
+                    <td class="px-6 py-4 text-neutral-600">Alignment with conference theme and practice research focus</td>
+                    <td class="px-6 py-4 text-center text-primary-600 font-semibold">25%</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-25 transition-colors duration-150">
+                    <td class="px-6 py-4 font-medium text-neutral-800">Methodology</td>
+                    <td class="px-6 py-4 text-neutral-600">Appropriateness and rigor of research approach</td>
+                    <td class="px-6 py-4 text-center text-primary-600 font-semibold">25%</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-25 transition-colors duration-150">
+                    <td class="px-6 py-4 font-medium text-neutral-800">Innovation</td>
+                    <td class="px-6 py-4 text-neutral-600">Novelty of approach, methods, or insights</td>
+                    <td class="px-6 py-4 text-center text-primary-600 font-semibold">20%</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-25 transition-colors duration-150">
+                    <td class="px-6 py-4 font-medium text-neutral-800">Significance</td>
+                    <td class="px-6 py-4 text-neutral-600">Potential impact on practice, policy, or research</td>
+                    <td class="px-6 py-4 text-center text-primary-600 font-semibold">20%</td>
+                  </tr>
+                  <tr class="hover:bg-neutral-25 transition-colors duration-150">
+                    <td class="px-6 py-4 font-medium text-neutral-800">Clarity</td>
+                    <td class="px-6 py-4 text-neutral-600">Clear presentation of objectives, methods, and findings</td>
+                    <td class="px-6 py-4 text-center text-primary-600 font-semibold">10%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Review Process -->
+          <div class="mt-12 bg-accent-50 rounded-2xl p-8">
+            <h3 class="text-xl font-bold text-neutral-800 mb-6 text-center">Review Process</h3>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div class="text-center">
+                <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="text-accent-600 font-bold">1</span>
+                </div>
+                <h4 class="font-semibold text-neutral-800 mb-2">Submission</h4>
+                <p class="text-sm text-neutral-600">Submit via online platform</p>
+              </div>
+              
+              <div class="text-center">
+                <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="text-accent-600 font-bold">2</span>
+                </div>
+                <h4 class="font-semibold text-neutral-800 mb-2">Review</h4>
+                <p class="text-sm text-neutral-600">Double-blind peer review</p>
+              </div>
+              
+              <div class="text-center">
+                <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="text-accent-600 font-bold">3</span>
+                </div>
+                <h4 class="font-semibold text-neutral-800 mb-2">Decision</h4>
+                <p class="text-sm text-neutral-600">Notification by January 31</p>
+              </div>
+              
+              <div class="text-center">
+                <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span class="text-accent-600 font-bold">4</span>
+                </div>
+                <h4 class="font-semibold text-neutral-800 mb-2">Presentation</h4>
+                <p class="text-sm text-neutral-600">Present at ICPR7 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submission Platform -->
+    <section class="py-16 lg:py-20 bg-white" aria-labelledby="submission-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 id="submission-heading" class="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
+            Submit Your Abstract
+          </h2>
+          <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-8"></div>
+          
+          <div class="bg-gradient-to-br from-primary-50 to-primary-25 rounded-2xl p-8 lg:p-12">
+            <!-- Submission Form Placeholder Image -->
+            <div class="mb-8">
+              <svg class="w-32 h-32 mx-auto text-primary-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-neutral-800 mb-6">Online Submission Platform</h3>
+            
+            <p class="text-neutral-600 text-lg leading-relaxed mb-8">
+              Our secure online platform makes it easy to submit your abstract, track your submission status, 
+              and receive updates on the review process.
+            </p>
+            
+            <!-- Submission Button -->
+            <div class="mb-8">
+              <a 
+                href="#" 
+                class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold inline-flex items-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                aria-label="Access abstract submission platform"
+              >
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                </svg>
+                Submit Abstract
+              </a>
+            </div>
+            
+            <!-- Platform Features -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+              <div class="bg-white/50 rounded-lg p-4">
+                <div class="flex items-center mb-2">
+                  <svg class="w-5 h-5 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span class="font-medium text-neutral-800">Secure Upload</span>
+                </div>
+                <p class="text-sm text-neutral-600">Encrypted file transfer and storage</p>
+              </div>
+              
+              <div class="bg-white/50 rounded-lg p-4">
+                <div class="flex items-center mb-2">
+                  <svg class="w-5 h-5 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5V2a2 2 0 00-2-2H7a2 2 0 00-2 2v16l5-5z"></path>
+                  </svg>
+                  <span class="font-medium text-neutral-800">Status Tracking</span>
+                </div>
+                <p class="text-sm text-neutral-600">Real-time submission status updates</p>
+              </div>
+              
+              <div class="bg-white/50 rounded-lg p-4">
+                <div class="flex items-center mb-2">
+                  <svg class="w-5 h-5 text-primary-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 11-9.75 9.75A9.75 9.75 0 0112 2.25z"></path>
+                  </svg>
+                  <span class="font-medium text-neutral-800">24/7 Support</span>
+                </div>
+                <p class="text-sm text-neutral-600">Technical assistance available</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section class="py-16 lg:py-20 bg-neutral-50">
+      <div class="container mx-auto px-6">
+        <ImportantDates />
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-16 bg-primary-600 text-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6">Questions About Submissions?</h2>
+          
+          <p class="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
+            Our submission committee is here to help with any questions about the abstract submission process, 
+            requirements, or technical issues.
+          </p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div class="text-left">
+              <div class="flex items-center mb-4">
+                <svg class="w-6 h-6 text-primary-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+                <span class="font-semibold text-white">Email Support</span>
+              </div>
+              <p class="text-primary-100 mb-2">submissions@icpr7.org</p>
+              <p class="text-sm text-primary-200">Response within 24 hours</p>
+            </div>
+            
+            <div class="text-left">
+              <div class="flex items-center mb-4">
+                <svg class="w-6 h-6 text-primary-200 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="font-semibold text-white">Technical Support</span>
+              </div>
+              <p class="text-primary-100 mb-2">tech-support@icpr7.org</p>
+              <p class="text-sm text-primary-200">Platform and submission assistance</p>
+            </div>
+          </div>
+          
+          <div class="pt-6 border-t border-primary-500">
+            <p class="text-sm text-primary-200">
+              Abstract submission guidelines and templates are available in our 
+              <a href="#" class="text-white underline hover:text-primary-100 transition-colors duration-200">
+                submission toolkit
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</body>
+</html>

@@ -1,0 +1,384 @@
+---
+// Programmes page with professional academic design
+// Features comprehensive program overview with enhanced accessibility
+import Nav from '../components/Nav.astro';
+import SpeakerCard from '../components/SpeakerCard.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programme - ICPR7 2026 | 7th International Conference on Practice Research</title>
+  <meta name="description" content="Explore the comprehensive program for ICPR7 2026 featuring pre-conference workshops, main conference sessions, and post-conference activities in Singapore.">
+  <meta name="keywords" content="ICPR7 programme, practice research conference, workshops, keynote sessions, Singapore 2026">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-neutral-25 font-sans antialiased">
+  <Nav />
+
+  <main class="min-h-screen">
+    <!-- Page Header -->
+    <section class="bg-gradient-to-b from-primary-50 to-white py-16 lg:py-20" aria-labelledby="programmes-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="inline-flex items-center bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0h6m-6 0l-4 8h4l2-4 2 4h4l-4-8M3 21h18"></path>
+            </svg>
+            Conference Programme
+          </div>
+          
+          <h1 id="programmes-heading" class="text-4xl md:text-5xl font-bold text-neutral-800 mb-6">
+            ICPR7 Programme
+          </h1>
+          
+          <p class="text-xl text-neutral-600 leading-relaxed max-w-3xl mx-auto mb-8">
+            A comprehensive three-day program featuring internationally renowned speakers, interactive workshops, 
+            and networking opportunities designed to advance practice research across sectors and contexts.
+          </p>
+          
+          <!-- Programme Overview Image -->
+          <div class="mb-8">
+            <img 
+              src="/images/conference-placeholder.svg" 
+              alt="Conference programme overview illustration" 
+              class="max-w-md mx-auto rounded-lg shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programme Navigation -->
+    <section class="py-8 bg-white border-b border-neutral-100">
+      <div class="container mx-auto px-6">
+        <nav aria-label="Programme sections" class="flex justify-center">
+          <div class="flex space-x-1 bg-neutral-100 p-1 rounded-lg">
+            <a href="#pre-conference" class="px-6 py-3 text-sm font-medium text-primary-700 bg-white rounded-md shadow-sm hover:bg-neutral-50 transition-colors duration-200">
+              Pre-Conference
+            </a>
+            <a href="#main-conference" class="px-6 py-3 text-sm font-medium text-neutral-600 hover:text-primary-700 hover:bg-neutral-50 rounded-md transition-colors duration-200">
+              Main Conference
+            </a>
+            <a href="#post-conference" class="px-6 py-3 text-sm font-medium text-neutral-600 hover:text-primary-700 hover:bg-neutral-50 rounded-md transition-colors duration-200">
+              Post-Conference
+            </a>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Pre-Conference Programme -->
+    <section id="pre-conference" class="py-16 lg:py-20 bg-neutral-50" aria-labelledby="pre-conference-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 id="pre-conference-heading" class="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
+              Pre-Conference Programmes
+            </h2>
+            <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-6"></div>
+            <p class="text-neutral-600 text-lg max-w-3xl mx-auto">
+              Intensive workshops and masterclasses designed to provide in-depth knowledge and practical skills 
+              in various aspects of practice research methodology.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Workshop 1 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-neutral-200">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-neutral-800">Research Methods Masterclass</h3>
+                  <p class="text-sm text-primary-600 font-medium">July 6, 2026 • 9:00 AM - 4:00 PM</p>
+                </div>
+              </div>
+              
+              <p class="text-neutral-600 mb-6 leading-relaxed">
+                Comprehensive introduction to contemporary practice research methodologies, including participatory 
+                approaches, action research, and collaborative inquiry methods.
+              </p>
+              
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                  </svg>
+                  <div>
+                    <p class="font-medium text-neutral-800">Lead Facilitator</p>
+                    <p class="text-sm text-neutral-600">Prof. Mike Austin, USA</p>
+                  </div>
+                </div>
+                
+                <div class="pt-4 border-t border-neutral-100">
+                  <p class="text-sm text-neutral-500 mb-2">Target Audience:</p>
+                  <p class="text-sm text-neutral-700">Early career researchers, practitioners new to practice research</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Workshop 2 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-neutral-200">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                  <svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-neutral-800">Data Analysis Workshop</h3>
+                  <p class="text-sm text-primary-600 font-medium">July 6, 2026 • 9:00 AM - 4:00 PM</p>
+                </div>
+              </div>
+              
+              <p class="text-neutral-600 mb-6 leading-relaxed">
+                Advanced techniques for analyzing practice research data, including qualitative coding, 
+                mixed-methods integration, and collaborative data interpretation approaches.
+              </p>
+              
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                  </svg>
+                  <div>
+                    <p class="font-medium text-neutral-800">Lead Facilitator</p>
+                    <p class="text-sm text-neutral-600">Dr. Sidsel Natland, Norway</p>
+                  </div>
+                </div>
+                
+                <div class="pt-4 border-t border-neutral-100">
+                  <p class="text-sm text-neutral-500 mb-2">Target Audience:</p>
+                  <p class="text-sm text-neutral-700">Experienced researchers, PhD students, research coordinators</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Conference Programme -->
+    <section id="main-conference" class="py-16 lg:py-20 bg-white" aria-labelledby="main-conference-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 id="main-conference-heading" class="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
+              Main Conference Programme
+            </h2>
+            <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-6"></div>
+            <p class="text-neutral-600 text-lg max-w-3xl mx-auto">
+              Three intensive days of keynote presentations, research sessions, and networking opportunities 
+              bringing together the global practice research community.
+            </p>
+          </div>
+
+          <!-- Daily Schedule -->
+          <div class="space-y-12">
+            <!-- Day 1 -->
+            <div class="bg-gradient-to-r from-primary-50 to-primary-25 rounded-2xl p-8">
+              <div class="flex items-center mb-6">
+                <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mr-6">
+                  <span class="text-2xl font-bold text-primary-600">1</span>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-neutral-800">Day 1: July 7, 2026</h3>
+                  <p class="text-primary-700 font-medium">Practice Research Vision and Mission</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Opening Ceremony</h4>
+                  <p class="text-sm text-neutral-600 mb-4">9:00 AM - 10:00 AM</p>
+                  <p class="text-sm text-neutral-700">Welcome address and conference overview</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Keynote Session</h4>
+                  <p class="text-sm text-neutral-600 mb-4">10:30 AM - 12:00 PM</p>
+                  <p class="text-sm text-neutral-700">International perspectives on practice research</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Panel Discussion</h4>
+                  <p class="text-sm text-neutral-600 mb-4">2:00 PM - 3:30 PM</p>
+                  <p class="text-sm text-neutral-700">Change and inclusion across borders</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="bg-gradient-to-r from-accent-50 to-accent-25 rounded-2xl p-8">
+              <div class="flex items-center mb-6">
+                <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mr-6">
+                  <span class="text-2xl font-bold text-accent-600">2</span>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-neutral-800">Day 2: July 8, 2026</h3>
+                  <p class="text-accent-700 font-medium">Evolution of Practice Research in Singapore</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Research Presentations</h4>
+                  <p class="text-sm text-neutral-600 mb-4">9:00 AM - 10:30 AM</p>
+                  <p class="text-sm text-neutral-700">Concurrent research sessions</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Local Context Keynote</h4>
+                  <p class="text-sm text-neutral-600 mb-4">11:00 AM - 12:30 PM</p>
+                  <p class="text-sm text-neutral-700">Singapore's practice research landscape</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Workshops</h4>
+                  <p class="text-sm text-neutral-600 mb-4">2:00 PM - 4:00 PM</p>
+                  <p class="text-sm text-neutral-700">Interactive skill-building sessions</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="bg-gradient-to-r from-neutral-50 to-neutral-25 rounded-2xl p-8">
+              <div class="flex items-center mb-6">
+                <div class="w-16 h-16 bg-neutral-200 rounded-full flex items-center justify-center mr-6">
+                  <span class="text-2xl font-bold text-neutral-600">3</span>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-neutral-800">Day 3: July 9, 2026</h3>
+                  <p class="text-neutral-700 font-medium">Practice Research Across Borders and Sectors</p>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Final Keynotes</h4>
+                  <p class="text-sm text-neutral-600 mb-4">9:00 AM - 11:00 AM</p>
+                  <p class="text-sm text-neutral-700">Global perspectives and future directions</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Closing Ceremony</h4>
+                  <p class="text-sm text-neutral-600 mb-4">11:30 AM - 12:30 PM</p>
+                  <p class="text-sm text-neutral-700">Reflections and next steps</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                  <h4 class="font-semibold text-neutral-800 mb-2">Farewell Reception</h4>
+                  <p class="text-sm text-neutral-600 mb-4">6:00 PM - 8:00 PM</p>
+                  <p class="text-sm text-neutral-700">Networking and celebration</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Post-Conference Programme -->
+    <section id="post-conference" class="py-16 lg:py-20 bg-neutral-50" aria-labelledby="post-conference-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 id="post-conference-heading" class="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
+            Post-Conference Activities
+          </h2>
+          <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-8"></div>
+          
+          <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-sm border border-neutral-200">
+            <div class="flex justify-center mb-6">
+              <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center">
+                <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2-2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+            </div>
+            
+            <h3 class="text-2xl font-bold text-neutral-800 mb-6">Site Visits & Cultural Exchange</h3>
+            
+            <p class="text-neutral-600 text-lg leading-relaxed mb-8">
+              Optional post-conference activities include guided visits to Singapore's leading social service organizations, 
+              research institutions, and cultural sites to deepen understanding of local practice research contexts.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-primary-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2-2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-neutral-800 mb-2">Social Service Organizations</h4>
+                  <p class="text-neutral-600 text-sm">Visit leading agencies implementing practice research methodologies</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start">
+                <svg class="w-6 h-6 text-primary-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-neutral-800 mb-2">Research Institutions</h4>
+                  <p class="text-neutral-600 text-sm">Explore university research centers and collaborative partnerships</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-neutral-100">
+              <p class="text-sm text-neutral-500 mb-4">Additional Information:</p>
+              <ul class="text-sm text-neutral-600 space-y-2 text-left max-w-2xl mx-auto">
+                <li>• Site visits: July 10-11, 2026</li>
+                <li>• Separate registration required</li>
+                <li>• Limited capacity - early registration recommended</li>
+                <li>• Transportation and meals included</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-primary-600 text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Ready to Join ICPR7?</h2>
+        <p class="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
+          Secure your place at this landmark conference and be part of advancing practice research globally.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a 
+            href="/registration" 
+            class="bg-white text-primary-600 hover:bg-neutral-50 px-8 py-4 rounded-lg font-semibold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600"
+          >
+            Register Now
+          </a>
+          <a 
+            href="/abstracts" 
+            class="border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-4 rounded-lg font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600"
+          >
+            Submit Abstract
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</body>
+</html>

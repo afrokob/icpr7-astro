@@ -1,0 +1,6 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="100" fill="#dcfce7"/>
+  <circle cx="100" cy="80" r="35" fill="#22c55e"/>
+  <path d="M100 125c-25 0-45 15-45 35v40h90v-40c0-20-20-35-45-35z" fill="#22c55e"/>
+  <text x="100" y="185" font-family="Inter" font-size="12" font-weight="600" text-anchor="middle" fill="#15803d">T.S. Wee</text>
+</svg>

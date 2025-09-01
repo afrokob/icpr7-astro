@@ -1,0 +1,39 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Professional university campus background -->
+  <rect width="1200" height="600" fill="#f8fafc"/>
+  
+  <!-- Buildings silhouette -->
+  <rect x="100" y="300" width="200" height="300" fill="#334155"/>
+  <rect x="350" y="250" width="180" height="350" fill="#475569"/>
+  <rect x="580" y="280" width="160" height="320" fill="#334155"/>
+  <rect x="790" y="220" width="200" height="380" fill="#475569"/>
+  <rect x="1040" y="260" width="160" height="340" fill="#334155"/>
+  
+  <!-- Windows -->
+  <rect x="120" y="320" width="15" height="20" fill="#0284c7" opacity="0.8"/>
+  <rect x="140" y="320" width="15" height="20" fill="#0284c7" opacity="0.8"/>
+  <rect x="160" y="320" width="15" height="20" fill="#0284c7" opacity="0.8"/>
+  <rect x="120" y="350" width="15" height="20" fill="#0284c7" opacity="0.8"/>
+  <rect x="140" y="350" width="15" height="20" fill="#0284c7" opacity="0.8"/>
+  <rect x="160" y="350" width="15" height="20" fill="#0284c7" opacity="0.8"/>
+  
+  <!-- Sky gradient -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f2fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="250" fill="url(#skyGradient)"/>
+  
+  <!-- Conference text overlay -->
+  <rect x="50" y="100" width="500" height="150" fill="rgba(15, 23, 42, 0.8)" rx="8"/>
+  <text x="80" y="140" font-family="Inter" font-size="32" font-weight="bold" fill="white">ICPR7 2026</text>
+  <text x="80" y="170" font-family="Inter" font-size="16" fill="#cbd5e1">Singapore University of Social Sciences</text>
+  <text x="80" y="195" font-family="Inter" font-size="16" fill="#cbd5e1">July 7-9, 2026</text>
+  
+  <!-- Academic elements -->
+  <circle cx="900" cy="100" r="40" fill="#0284c7" opacity="0.2"/>
+  <circle cx="950" cy="120" r="25" fill="#0369a1" opacity="0.3"/>
+  <circle cx="1050" cy="90" r="35" fill="#0284c7" opacity="0.2"/>
+</svg>
