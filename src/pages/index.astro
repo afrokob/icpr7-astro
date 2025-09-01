@@ -1,0 +1,300 @@
+---
+// Main homepage with professional academic design
+// Emphasizes clarity, accessibility, and structured content presentation
+import Nav from '../components/Nav.astro';
+import SpeakerCard from '../components/SpeakerCard.astro';
+import ImportantDates from '../components/ImportantDates.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICPR7 2026 - 7th International Conference on Practice Research | Singapore</title>
+  <meta name="description" content="Join the 7th International Conference on Practice Research in Singapore, 7-9 July 2026, at Singapore University of Social Sciences. Theme: Practice Research Without Borders - Inclusion and Change Across Sectors and Contexts.">
+  <meta name="keywords" content="practice research, conference, Singapore, ICPR7, social work, academic conference, research methodology">
+  <meta name="author" content="ICPR7 Conference Committee">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://icpr7.org/">
+  <meta property="og:title" content="ICPR7 2026 - 7th International Conference on Practice Research">
+  <meta property="og:description" content="Practice Research Without Borders: Inclusion and Change Across Sectors and Contexts. July 7-9, 2026 in Singapore.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="ICPR7 2026 - 7th International Conference on Practice Research">
+  <meta property="twitter:description" content="Practice Research Without Borders: Inclusion and Change Across Sectors and Contexts. July 7-9, 2026 in Singapore.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-neutral-25 font-sans antialiased">
+  <Nav />
+
+  <main class="min-h-screen">
+    <!-- Hero Section with enhanced visual hierarchy -->
+    <section class="bg-gradient-to-b from-neutral-50 to-white py-16 lg:py-24" aria-labelledby="hero-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-5xl mx-auto text-center">
+          <!-- Conference badge -->
+          <div class="inline-flex items-center bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0h6m-6 0l-4 8h4l2-4 2 4h4l-4-8M3 21h18"></path>
+            </svg>
+            International Academic Conference
+          </div>
+          
+          <!-- Main heading -->
+          <h1 id="hero-heading" class="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-800 mb-6 leading-tight">
+            7th International Conference on 
+            <span class="text-primary-600 block mt-2">Practice Research</span>
+          </h1>
+          
+          <!-- Conference theme -->
+          <div class="mb-8">
+            <p class="text-xl md:text-2xl text-neutral-600 font-medium mb-4 leading-relaxed">
+              Practice Research Without Borders: <br class="hidden sm:block">
+              Inclusion and Change Across Sectors and Contexts
+            </p>
+            
+            <!-- Date and location with enhanced styling -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 text-lg text-neutral-500">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0h6m-6 0l-4 8h4l2-4 2 4h4l-4-8M3 21h18"></path>
+                </svg>
+                <time datetime="2026-07-07/2026-07-09">7-9 July 2026</time>
+              </div>
+              <div class="hidden sm:block text-neutral-300">•</div>
+              <div class="flex items-center">
+                <svg class="w-5 h-5 mr-2 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                Singapore University of Social Sciences
+              </div>
+            </div>
+          </div>
+
+          <!-- Conference description -->
+          <div class="max-w-4xl mx-auto mb-10">
+            <p class="text-neutral-600 text-lg leading-relaxed">
+              The first International Conference on Practice Research in Salisbury in 2008 laid the foundation for future conferences and statements, and the establishment of the International Community of Practice Research in Social Work. Each subsequent conference, including Helsinki, New York, Hong Kong, Melbourne, and Aalborg have contributed to the evolving definition of practice research, emphasizing the involvement of practitioners, service users, researchers, and other stakeholders.
+            </p>
+            <p class="text-neutral-600 text-lg leading-relaxed mt-4">
+              We are excited that the next International Practice Research Conference will be held in Singapore on 7th to 9th July 2026. We warmly invite you to Singapore, the Garden City of Asia, to immerse yourself in the vibrant culture and sunny hospitality of our island nation as we engage in rich and meaningful conversations on practice research alongside colleagues around the world.
+            </p>
+          </div>
+
+          <!-- Call-to-action buttons -->
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a 
+              href="/abstracts" 
+              class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Submit Abstract
+            </a>
+            <a 
+              href="/registration" 
+              class="bg-white hover:bg-neutral-50 text-neutral-800 border-2 border-neutral-200 hover:border-neutral-300 px-8 py-4 rounded-lg font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:ring-offset-2 shadow-sm hover:shadow-md"
+            >
+              Register Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Important Dates Section -->
+    <section class="py-16 lg:py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <ImportantDates />
+      </div>
+    </section>
+
+    <!-- Keynote Speakers Section -->
+    <section class="py-16 lg:py-20 bg-neutral-50" aria-labelledby="speakers-heading">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 id="speakers-heading" class="text-3xl md:text-4xl font-bold text-neutral-800 mb-4">
+            Keynote Speakers
+          </h2>
+          <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-6"></div>
+          <p class="text-neutral-600 text-lg max-w-3xl mx-auto">
+            Join us for inspiring presentations from leading experts in practice research from around the world.
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 max-w-7xl mx-auto">
+          <!-- Day 1 -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-neutral-200">
+            <div class="text-center mb-6">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+                <span class="text-primary-600 font-bold text-lg">1</span>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-800 mb-2">Day 1: 7 July 2026</h3>
+              <p class="text-neutral-600 text-sm font-medium leading-relaxed">
+                Practice Research Vision and Mission – Change and Inclusion Across Borders and Sectors
+              </p>
+            </div>
+            <div class="space-y-4">
+              <SpeakerCard name="Emeritus Prof. Mike Austin" title="Board Member, The International Community of Practice Research, USA" />
+              <SpeakerCard name="Dr Sidsel Natland" title="Board Member, The International Community of Practice Research, Norway" />
+              <SpeakerCard name="Associate Professor Sui Ting Kong" title="Board Member, The International Community of Practice Research, UK" />
+            </div>
+          </div>
+
+          <!-- Day 2 -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-neutral-200">
+            <div class="text-center mb-6">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+                <span class="text-primary-600 font-bold text-lg">2</span>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-800 mb-2">Day 2: 8 July 2026</h3>
+              <p class="text-neutral-600 text-sm font-medium leading-relaxed">
+                Evolution of Practice Research in Singapore – Challenges and Opportunities
+              </p>
+            </div>
+            <div class="space-y-4">
+              <SpeakerCard name="Dr Chung You Jin" title="Singapore University of Social Sciences, Singapore" />
+              <SpeakerCard name="Dr Judith Chew" title="KK Women's and Children's Hospital, Singapore" />
+            </div>
+          </div>
+
+          <!-- Day 3 -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-neutral-200">
+            <div class="text-center mb-6">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+                <span class="text-primary-600 font-bold text-lg">3</span>
+              </div>
+              <h3 class="text-xl font-bold text-neutral-800 mb-2">Day 3: 9 July 2026</h3>
+              <p class="text-neutral-600 text-sm font-medium leading-relaxed">
+                Practice Research Across Borders and Sectors: Inclusion and Change
+              </p>
+            </div>
+            <div class="space-y-4">
+              <SpeakerCard name="Emeritus Prof. Antoinette Lombard" title="President, International Association of Schools of Social Work, South Africa" />
+              <SpeakerCard name="Prof. Tsui Ming Sum" title="Editor, International Social Work, Hong Kong" />
+              <SpeakerCard name="Tan Sze Wee" title="President, Singapore Association of Social Workers, Singapore" />
+              
+              <!-- Closing Keynote -->
+              <div class="pt-4 border-t border-neutral-100 mt-6">
+                <h4 class="text-md font-semibold text-neutral-700 mb-3 text-center">Closing Keynote</h4>
+                <p class="text-neutral-600 text-xs mb-3 text-center">
+                  Reflecting on the Lessons Learned, Observations and Recommendations
+                </p>
+                <div class="space-y-3">
+                  <SpeakerCard name="Prof. Sara Serbati" title="Board Member, The International Community of Practice Research, Italy" />
+                  <SpeakerCard name="Ms Salina Samion" title="Deputy Director of Psychological and Correctional Rehabilitation Division, Singapore Prison Service, Singapore" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conference Motif Section -->
+    <section class="py-16 lg:py-20 bg-white" aria-labelledby="motif-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 id="motif-heading" class="text-3xl md:text-4xl font-bold text-neutral-800 mb-6">
+            About the Conference Motif
+          </h2>
+          <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-8"></div>
+          
+          <div class="bg-neutral-50 rounded-2xl p-8 lg:p-12">
+            <div class="flex justify-center mb-6">
+              <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center">
+                <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+            </div>
+            <p class="text-neutral-700 text-lg leading-relaxed">
+              For ICPR7 2026, the motif reflects the values of diversity and resilience – core to practice research. With thousands of distinct perspectives, methodologies, and contexts, our field is represented by a commitment to academic rigor and global collaboration. The conference theme emphasizes breaking down borders to foster inclusion and drive meaningful change across different sectors and contexts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section class="py-16 lg:py-20 bg-primary-50" aria-labelledby="venue-heading">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 id="venue-heading" class="text-3xl md:text-4xl font-bold text-neutral-800 mb-6">
+            Conference Venue
+          </h2>
+          <div class="w-20 h-1 bg-primary-500 mx-auto rounded-full mb-8"></div>
+          
+          <div class="bg-white rounded-2xl p-8 lg:p-12 shadow-sm border border-primary-100">
+            <div class="flex justify-center mb-6">
+              <div class="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center">
+                <svg class="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+            </div>
+            
+            <div class="mb-6">
+              <h3 class="text-xl font-bold text-neutral-800 mb-2">Singapore University of Social Sciences (SUSS)</h3>
+              <address class="text-neutral-600 not-italic">
+                463 Clementi Road, Singapore 599494
+              </address>
+            </div>
+            
+            <p class="text-neutral-600 mb-8 leading-relaxed">
+              Accommodation suggestions, travel tips, and other useful visitor information will be made available soon.
+            </p>
+            
+            <nav aria-label="Venue information links">
+              <div class="flex flex-wrap justify-center gap-4">
+                <a 
+                  href="#" 
+                  class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 rounded-md px-3 py-2"
+                >
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                  </svg>
+                  Campus Map
+                </a>
+                <a 
+                  href="#" 
+                  class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 rounded-md px-3 py-2"
+                >
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  Locate SUSS
+                </a>
+                <a 
+                  href="#" 
+                  class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 rounded-md px-3 py-2"
+                >
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  About SUSS
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</body>
+</html>

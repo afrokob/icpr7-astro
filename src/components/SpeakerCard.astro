@@ -1,0 +1,36 @@
+---
+// Clean, minimal speaker card component with professional styling
+// Emphasizes readability and accessibility for academic content
+const { name, title, image } = Astro.props;
+---
+
+<div class="bg-white border border-neutral-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200 hover:border-neutral-300">
+  <!-- Optional placeholder for speaker image -->
+  {image && (
+    <div class="mb-4 flex justify-center">
+      <img 
+        src={image} 
+        alt={`Portrait of ${name}`}
+        class="w-20 h-20 rounded-full object-cover border-2 border-neutral-100"
+        loading="lazy"
+      />
+    </div>
+  )}
+  
+  <!-- Speaker Name -->
+  <h4 class="text-lg font-semibold text-neutral-800 mb-2 leading-tight">
+    {name}
+  </h4>
+  
+  <!-- Speaker Title/Affiliation -->
+  <p class="text-neutral-600 text-sm leading-relaxed">
+    {title}
+  </p>
+  
+  <!-- Visual separator line for enhanced structure -->
+  <div class="mt-4 pt-4 border-t border-neutral-100">
+    <div class="flex items-center justify-center">
+      <div class="w-8 h-1 bg-primary-200 rounded-full"></div>
+    </div>
+  </div>
+</div>

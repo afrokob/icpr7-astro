@@ -1,0 +1,29 @@
+{
+  "name": "icpr7-site",
+  "version": "1.0.0",
+  "description": "7th International Conference on Practice Research - Official Conference Website",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/vercel": "^7.8.0",
+    "astro": "^4.15.4",
+    "tailwindcss": "^3.4.10"
+  },
+  "keywords": [
+    "astro",
+    "conference",
+    "practice-research",
+    "academic",
+    "singapore",
+    "icpr7"
+  ],
+  "author": "ICPR7 Conference Committee",
+  "license": "MIT"
+}

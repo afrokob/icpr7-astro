@@ -1,0 +1,135 @@
+---
+// Professional navigation component with enhanced accessibility
+// Uses clean styling with subtle hover effects and proper ARIA attributes
+const navLinks = [
+  { name: "Homepage", href: "/" },
+  { name: "Programmes", href: "/programmes", subLinks: [
+    { name: "Pre-Conference Programmes", href: "/programmes/pre-conference" },
+    { name: "Main Conference Programmes", href: "/programmes/main" },
+    { name: "Post-Conference Programmes", href: "/programmes/post-conference" }
+  ]},
+  { name: "Conference Team", href: "/team" },
+  { name: "Call for Abstracts", href: "/abstracts" },
+  { name: "Registration", href: "/registration" }
+];
+---
+
+<nav class="bg-neutral-800 text-white shadow-lg border-b border-neutral-700" role="navigation" aria-label="Main navigation">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo/Brand -->
+      <div class="flex items-center space-x-4">
+        <a href="/" class="text-2xl font-bold text-white hover:text-primary-200 transition-colors duration-200" aria-label="ICPR7 Home">
+          ICPR7
+        </a>
+        <span class="hidden md:block text-neutral-300 text-sm font-medium">Singapore 2026</span>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:block">
+        <ul class="flex items-center space-x-8">
+          {navLinks.map(link => (
+            <li class="relative group">
+              <a 
+                href={link.href} 
+                class="text-white hover:text-primary-200 font-medium py-2 px-3 rounded-md transition-all duration-200 hover:bg-neutral-700/50 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-neutral-800"
+                aria-haspopup={link.subLinks ? 'true' : 'false'}
+                aria-expanded="false"
+              >
+                {link.name}
+                {link.subLinks && (
+                  <svg class="inline ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                )}
+              </a>
+              {link.subLinks && (
+                <ul 
+                  class="absolute left-0 top-full mt-1 w-72 bg-white text-neutral-800 shadow-xl rounded-lg border border-neutral-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                  role="menu"
+                  aria-label={`${link.name} submenu`}
+                >
+                  {link.subLinks.map(subLink => (
+                    <li role="none">
+                      <a 
+                        href={subLink.href} 
+                        class="block px-6 py-3 text-neutral-700 hover:text-primary-700 hover:bg-neutral-50 first:rounded-t-lg last:rounded-b-lg transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-inset"
+                        role="menuitem"
+                      >
+                        {subLink.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        class="lg:hidden text-white hover:text-primary-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-neutral-800 p-2 rounded-md"
+        aria-label="Open mobile menu"
+        aria-expanded="false"
+        id="mobile-menu-button"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation (hidden by default) -->
+    <div class="lg:hidden mt-4 hidden" id="mobile-menu">
+      <ul class="space-y-2">
+        {navLinks.map(link => (
+          <li>
+            <a 
+              href={link.href} 
+              class="block text-white hover:text-primary-200 hover:bg-neutral-700/50 py-3 px-4 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-neutral-800"
+            >
+              {link.name}
+            </a>
+            {link.subLinks && (
+              <ul class="ml-4 mt-2 space-y-1">
+                {link.subLinks.map(subLink => (
+                  <li>
+                    <a 
+                      href={subLink.href} 
+                      class="block text-neutral-300 hover:text-primary-200 hover:bg-neutral-700/30 py-2 px-4 rounded-md text-sm transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:ring-offset-neutral-800"
+                    >
+                      {subLink.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Simple mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        mobileMenuButton.setAttribute('aria-expanded', 'true');
+        mobileMenuButton.setAttribute('aria-label', 'Close mobile menu');
+      } else {
+        mobileMenu.classList.add('hidden');
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+        mobileMenuButton.setAttribute('aria-label', 'Open mobile menu');
+      }
+    });
+  }
+</script>
